@@ -50,7 +50,7 @@ export function isDirector(employee: Director | Teacher): employee is Director {
 }
 
 // function to execute work based on employee type
-function executeWork(employee: Director | Teacher): string {
+export function executeWork(employee: Director | Teacher): string {
     if (isDirector(employee)) {
         return employee.workDirectorTasks();
     } else {
